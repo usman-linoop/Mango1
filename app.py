@@ -6,6 +6,11 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
+@app.route('/login')
+def login_function():
+    return 'This is a login page'
+
+
 if __name__ == '__main__':
   app.run(host="192.168.1.100", port=5000, debug=True)
 
